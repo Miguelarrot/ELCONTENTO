@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ELCONTENTODataSet2" targetNamespace="http://tempuri.org/ELCONTENTODataSet2.xsd" xmlns:mstns="http://tempuri.org/ELCONTENTODataSet2.xsd" xmlns="http://tempuri.org/ELCONTENTODataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ELCONTENTOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ELCONTENTOConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ELCONTENTO.Properties.Settings.GlobalReference.Default.ELCONTENTOConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ESTUDIANTETableAdapter" GeneratorDataComponentClassName="ESTUDIANTETableAdapter" Name="ESTUDIANTE" UserDataComponentName="ESTUDIANTETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ELCONTENTOConnectionString (Settings)" DbObjectName="ELCONTENTO.dbo.ESTUDIANTE" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CARNET, CODGRUPO, NOMBRE FROM dbo.ESTUDIANTE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CARNET" DataSetColumn="CARNET" />
+              <Mapping SourceColumn="CODGRUPO" DataSetColumn="CODGRUPO" />
+              <Mapping SourceColumn="NOMBRE" DataSetColumn="NOMBRE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ELCONTENTODataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ELCONTENTODataSet2" msprop:Generator_DataSetName="ELCONTENTODataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ESTUDIANTE" msprop:Generator_RowEvHandlerName="ESTUDIANTERowChangeEventHandler" msprop:Generator_RowDeletedName="ESTUDIANTERowDeleted" msprop:Generator_RowDeletingName="ESTUDIANTERowDeleting" msprop:Generator_RowEvArgName="ESTUDIANTERowChangeEvent" msprop:Generator_TablePropName="ESTUDIANTE" msprop:Generator_RowChangedName="ESTUDIANTERowChanged" msprop:Generator_RowChangingName="ESTUDIANTERowChanging" msprop:Generator_TableClassName="ESTUDIANTEDataTable" msprop:Generator_RowClassName="ESTUDIANTERow" msprop:Generator_TableVarName="tableESTUDIANTE" msprop:Generator_UserTableName="ESTUDIANTE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CARNET" msprop:Generator_ColumnPropNameInRow="CARNET" msprop:Generator_ColumnPropNameInTable="CARNETColumn" msprop:Generator_ColumnVarNameInTable="columnCARNET" msprop:Generator_UserColumnName="CARNET" type="xs:long" />
+              <xs:element name="CODGRUPO" msprop:Generator_ColumnPropNameInRow="CODGRUPO" msprop:Generator_ColumnPropNameInTable="CODGRUPOColumn" msprop:Generator_ColumnVarNameInTable="columnCODGRUPO" msprop:Generator_UserColumnName="CODGRUPO" type="xs:int" />
+              <xs:element name="NOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_UserColumnName="NOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
